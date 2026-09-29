@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Lolly ♡</title>
+<meta name="theme-color" content="#f8e1e4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@400;500&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+<!--
+  PHOTO MAP  (drop your real files into /images with these exact names)
+  photo-01  About Lolly: arched portrait (best: vertical/portrait photo)
+  photo-02  About Lolly: landscape photo
+  photo-03  About Lolly: round photo (square-ish crop, face centered)
+  photo-04  Us, Somehow: polaroid 1
+  photo-05  Us, Somehow: polaroid 2
+  photo-06  Us, Somehow: polaroid 3
+  photo-07  Us, Somehow: full-width photo (best: landscape)
+  photo-08  Us, Somehow: polaroid 4
+  photo-09  Us, Somehow: polaroid 5
+  photo-10  Memory reel (slide 1)
+  photo-11  Memory reel (slide 2)
+  photo-12  Memory reel (slide 3)
+  The reel then repeats photo-04, 06 and 09 as a recap. Edit REEL_PHOTOS in script.js to change this.
+  Song: music/birthday-song.mp3
+-->
+
+
+<!-- ============ OPENING ENVELOPE ============ -->
+<section id="gate" aria-label="Opening">
+  <p class="gate-top">A little something, just for you.</p>
+  <div class="env" aria-hidden="true">
+    <div class="env-letter"><span>For Lolly ♡</span></div>
+    <div class="env-front"></div>
+    <div class="env-flap"></div>
+    <div class="env-seal">♡</div>
+  </div>
+  <h1 class="gate-name">For Lolly ♡</h1>
+  <p class="gate-sub">An archive of little moments, made for one very special girl.</p>
+  <button id="openBtn" class="btn">Open your little surprise</button>
+</section>
+
+<main>
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">♡</span>
+  <p class="script">a little archive of you</p>
+  <h2>Happy Birthday,<br><em>Lolly!</em></h2>
+  <p class="lead">Today is all about celebrating you. I made you a small corner of the internet, filled with photos, a few words, and a song, so you can scroll through it slowly.</p>
+  <a class="hint" href="#about" aria-label="Scroll down">scroll gently ↓</a>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about-head rv">
+    <h3>The girl behind all these memories</h3>
+  </div>
+  <div class="about-grid">
+    <figure class="ph-wrap tall rv"><div class="ph"><img src="images/photo-01.jpg" data-slot="About / arched portrait" alt="Lolly" loading="lazy"></div></figure>
+    <div class="about-text rv">
+      <p class="big">You have this beautiful way of making ordinary days feel a little more special.</p>
+      <p>Some people make life brighter simply by being part of it. You are one of them.</p>
+    </div>
+    <figure class="ph-wrap wide rv"><div class="ph"><img src="images/photo-02.jpg" data-slot="About / landscape" alt="Lolly" loading="lazy"></div></figure>
+    <div class="about-text b rv">
+      <p>You are the kind of person people feel lucky to know.</p>
+      <p class="big">Life is a little sweeter with you in it.</p>
+    </div>
+    <figure class="ph-wrap sq rv"><div class="ph"><img src="images/photo-03.jpg" data-slot="About / round photo" alt="Lolly" loading="lazy"></div></figure>
+    <p class="about-close rv">May this new chapter bring you closer to everything your heart wishes for.</p>
+  </div>
+</section>
+
+<!-- ============ US, SOMEHOW ============ -->
+<section class="us" id="us">
+  <h3 class="us-title rv">Us, <em>somehow</em></h3>
+  <div class="scrap">
+    <figure class="pol p1 rv"><span class="tape"></span><div class="ph"><img src="images/photo-04.jpg" data-slot="Us / polaroid 1" alt="Lolly and me" loading="lazy"></div><figcaption>Some of my favorite memories have you in them.</figcaption></figure>
+    <figure class="pol p2 rv"><div class="ph"><img src="images/photo-05.jpg" data-slot="Us / polaroid 2" alt="Lolly and me" loading="lazy"></div></figure>
+    <p class="note n1 rv">Life feels a little better with you in it.</p>
+    <figure class="pol p3 rv"><span class="tape"></span><div class="ph"><img src="images/photo-06.jpg" data-slot="Us / polaroid 3" alt="Lolly and me" loading="lazy"></div><figcaption>So grateful for all the little moments we get to share.</figcaption></figure>
+    <figure class="full rv"><div class="ph"><img src="images/photo-07.jpg" data-slot="Us / full-width (use a landscape photo)" alt="Lolly and me" loading="lazy"></div><figcaption>Here’s to every memory we’ve made, and all the ones still waiting for us.</figcaption></figure>
+    <figure class="pol p4 rv"><div class="ph"><img src="images/photo-08.jpg" data-slot="Us / polaroid 4" alt="Lolly and me" loading="lazy"></div></figure>
+    <figure class="pol p5 rv"><span class="tape"></span><div class="ph"><img src="images/photo-09.jpg" data-slot="Us / polaroid 5" alt="Lolly and me" loading="lazy"></div><figcaption>You make even the simplest moments feel special.</figcaption></figure>
+    <p class="note n2 rv">No matter how much time passes, I’ll always be grateful for our friendship.</p>
+  </div>
+</section>
+
+<!-- ============ THINGS I HOPE YOU NEVER FORGET ============ -->
+<section class="hope" id="hope">
+  <h3 class="rv">Things I hope you never forget</h3>
+  <ol class="cards">
+    <li class="card rv" style="--r:-1.5deg">You are loved more than you probably realize.</li>
+    <li class="card rv" style="--r:1.2deg">You deserve the kind of happiness that makes even ordinary days feel magical.</li>
+    <li class="card rv" style="--r:-.8deg">Never feel like you have to become someone else to be worthy of beautiful things.</li>
+    <li class="card rv" style="--r:1.6deg">I hope you always find reasons to smile, even on the most ordinary days.</li>
+    <li class="card rv" style="--r:-1.2deg">I hope this year brings you new adventures, unexpected happiness, and countless reasons to be proud of yourself.</li>
+    <li class="card rv" style="--r:.7deg">And wherever life takes you, I hope you always remember how many beautiful memories are still waiting for you.</li>
+  </ol>
+</section>
+
+<!-- ============ SONG + REEL ============ -->
+<section class="song" id="song">
+  <h3 class="rv">A little song for you</h3>
+  <p class="song-sub rv">Press play. This one feels like you.</p>
+  <div class="stage rv">
+    <div class="reel" id="reel" aria-label="Memory reel"></div>
+    <div class="player" id="player">
+      <button id="playBtn" class="play" aria-label="Play"><span class="i-play">▶</span><span class="i-pause">❚❚</span></button>
+      <div class="pl-body">
+        <div class="pl-top">
+          <!-- EDIT: song title shown in the player -->
+          <span class="pl-title" id="songTitle">Our song</span>
+          <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </div>
+        <input id="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        <div class="pl-time"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+      </div>
+    </div>
+    <p class="err" id="audioErr" hidden>Add your song at <b>music/birthday-song.mp3</b> and refresh.</p>
+  </div>
+  <!-- PLACEHOLDER: replace this file (or change the src) with your real song -->
+  <audio id="audio" src="music/birthday-song.mp3" preload="metadata"></audio>
+</section>
+
+<!-- ============ ONE LAST THING ============ -->
+<section class="last" id="last">
+  <h3 class="rv">One last thing…</h3>
+  <div class="gift rv" id="gift">
+    <div class="note-paper">
+      <p class="to">Lolly,</p>
+      <p>I hope this new year of your life brings you more happiness than you can imagine, more beautiful memories than you can count, and more reasons to smile than you could ever ask for.</p>
+      <p>I hope you keep growing into the person you dream of becoming, discovering new things, making wonderful memories, and finding happiness in the little moments along the way.</p>
+      <p>You deserve so many beautiful things, and I hope this year brings you closer to all of them.</p>
+      <p class="sign">Happy Birthday, Lolly. ♡</p>
+    </div>
+    <button class="cover" id="giftBtn" aria-expanded="false">
+      <span class="ribbon-v"></span><span class="ribbon-h"></span>
+      <span class="bow">♡</span>
+      <span class="cover-txt">Open the last little gift</span>
+    </button>
+  </div>
+  <div class="ending" id="ending" aria-live="polite">
+    <h2>Happy Birthday, Lolly! ♡</h2>
+    <p>Here’s to another year of beautiful memories.</p>
+  </div>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
